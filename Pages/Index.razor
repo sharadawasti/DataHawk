@@ -1,0 +1,130 @@
+﻿@page "/"
+  <section class="articles_guides_sec">
+    <div class="container">
+      <div class="articles_guides_list">
+        <div class="heading">
+          <h2>Articles, Guides, and News for <span>eCommerce Professionals</span></h2>
+          <p>Explore insights, best advice, guides, researches, and how-tos <span>all in the name of helping you level-up your eCommerce Selling Skills.</span></p>
+        </div>
+
+        <div class="news_latter_sec">
+          <p>Get the latest eCommerce and Amazon insights and trends delivered straight to your inbox</p>
+
+          <div class="example" style="margin:auto;">
+            <div class="row">
+              <div class="col-md-9 col-xl-9 col-lg-9 col-sm-8 col-8 padding_right">
+                <input type="text" placeholder="Enter your work email" name="email" @bind="email">
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-4 padding_left">
+                <button type="submit" @onclick="Submit">Subscribe</button>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-4 padding_left">
+                <span style="color:white; padding-left:25px;">@Message</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @code
+{
+    public string[] Scopes = { SheetsService.Scope.Spreadsheets };
+    public string ApplicationName = "Pekohe";
+    public string SpreadsheetId = "136juz1M3j6X3FAajHFMd32a2KeXU29vMIkMuphkeHVU";
+    public string sheet = "Sheet1";
+    public string email = string.Empty;
+    public string records = string.Empty;
+    public string Message = string.Empty;
+    public bool IsLoading = false;
+    public SheetsService service;
+
+    protected override async Task OnInitializedAsync()
+    {
+      email = string.Empty;
+    }
+
+    protected async Task Submit()
+    {
+      IsLoading = true;
+      await Create();
+      //await Read();
+      email = string.Empty;
+      IsLoading = false;
+    }
+
+    protected async Task Validate()
+    {
+      GoogleCredential credential;
+      using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
+      {
+        credential = GoogleCredential.FromStream(stream).CreateScoped(Scopes);
+      }
+      service = new SheetsService(new Google.Apis.Services.BaseClientService.Initializer()
+      {
+        HttpClientInitializer = credential,
+        ApplicationName = ApplicationName,
+      });
+    }
+
+    protected async Task Read()
+    {
+      records = string.Empty;
+      try
+      {
+        await Validate();
+        var range = $"{sheet}!A1:B100";
+        var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
+        var response = request.Execute();
+        var values = response.Values;
+
+        if (values != null && values.Count > 0)
+        {
+          foreach (var row in values)
+          {
+            string ColumnValue = string.Empty;
+            foreach (var column in row)
+            {
+              ColumnValue = ColumnValue + "|" + column;
+            }
+            records = records + "<br/>" + ColumnValue;
+          }
+        }
+        else
+        {
+          records = "No records available";
+        }
+      }
+      catch
+      {
+
+      }
+    }
+
+    protected async Task Create()
+    {
+      try
+      {
+        Message = string.Empty;
+        if (!string.IsNullOrEmpty(email))
+        {
+          await Validate();
+          var range = $"{sheet}!A:B";
+          var valueRange = new ValueRange();
+
+          var objectList = new List<object> { email, DateTime.Now.ToString("dd-MM-yyyy HH:mm") };
+          valueRange.Values = new List<IList<object>> { objectList };
+
+          var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
+          appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+          var appendResponse = appendRequest.Execute();
+          Message = "Thank you for subscribe";
+        }
+      }
+      catch
+      {
+
+      }
+    }
+  }

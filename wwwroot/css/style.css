@@ -1,0 +1,441 @@
+.header_banner_sec{
+    background-image: url(../images/header_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 826px;
+}
+.header h2{
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #fff;
+}
+#header a h2{
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 27px;
+}
+.login_navbar_item ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login_navbar_item ul li a{
+    font-size: 13px;
+    color: #fff;
+    padding: 10px 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.free_singup_btn{
+    background-color: #00b4ff;
+    border-radius: 5px;
+    padding: 10px 11px;
+}
+.menubar_sec {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, #000000bd , #00000026);
+    padding-top: 10px;
+    padding-left: 17px;
+    padding-right: 20px;
+}
+.Pekohe_grows_orgamic_sec h2 span{
+    display: block;
+}
+.Pekohe_grows_orgamic_sec h2{
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 319px;
+}
+.datahawker_since_sec{
+    background-color: #f5f8fd;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.datahawker_since_item_list li img{
+    width: 20px;
+}
+.datahawker_since_item_list .text h2{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+        margin-bottom: 0px;
+}
+.datahawker_since_item_list h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: #757575;
+}
+.datahawker_since_item_list ul {
+    display: flex;
+    justify-content: center;
+}
+.datahawker_since_item_list ul li{
+    display: table;
+    width: 100%;
+}
+.datahawker_since_item_list ul li .icons{
+  display: table-cell;
+    width: 50px;
+    text-align: right;
+    padding-right: 14px;
+}
+.datahawker_since_item_list {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.datahawker_since_item_list h3 span{
+    display: block;
+}
+.introduction_client_sec h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+.introduction_clien_list .introduction_text {
+    margin-bottom: 32px;
+    padding-left: 50px;
+}
+.introduction_clien_list {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.introduction_client_sec {
+    margin-top: 50px;
+}
+.introduction_img img{
+    width: 100%;
+}
+.pekohe_need_list {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pekohe_need_text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+ .pekohe_need_sec .pekohe_need_text {
+    margin-bottom: 32px;
+     padding-left: 50px;
+}
+.pekohe_need_sec {
+    background-color: #f5f8fd;
+    padding-top: 40px;
+    padding-bottom: 30px;
+        margin-top: 44px;
+}
+.pekohe_need_text p{
+    margin-bottom: 10px;
+}
+
+.The_Process_sec .The_Process_list {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.The_Process_sec .The_Process_list {
+    margin-bottom: 32px;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+.The_Process_sec h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+.The_Process_text h6{
+    font-size: 16px;
+    font-weight: 700;
+        margin-bottom: 16px;
+}
+.The_Process_text p span{
+    font-size: 21px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+.The_Process_text p{
+    text-align: justify;
+    margin-bottom: 8px;
+}
+.the_results_sec .the_results_list {
+    width: 965px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.the_result_heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+.the_results_sec .the_result_heading {
+   padding-left: 130px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.the_results_table .table thead th {
+       vertical-align: bottom;
+    border-bottom: 2px solid #00b5ff;
+    background-color: #00b5ff;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-right: 1px solid #fff;
+}
+.the_results_table .table thead th:first-child{
+    background-color: #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+    color: #505050;
+}
+.the_results_table .table tbody td:first-child{
+    background-color: #00b5ff;
+    color: #fff;
+    text-align: left;
+}
+.the_results_table .table tbody td{
+  font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #2f2f2f;
+    border-top: none;
+    border-right: 1px solid #fff;
+}
+.the_results_list .table-striped tbody tr:nth-child(even) {
+    background-color: rgba(0,0,0,.05);
+}
+.the_results_list .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(255 255 255 / 5%);
+}
+section.now_is_your_time {
+    background-color: #15b2ec;
+    color: #fff;
+}
+.now_is_your_time_list{
+    display: table;
+}
+.now_is_your_time_list .now_is_your_time_text{
+    display: table-cell;
+    width: 469px;
+}
+.now_is_your_time_text p span{
+    display: block;
+}
+.now_is_your_time_text h2{
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+.now_is_your_time_value a{
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.now_is_your_time_value{
+    vertical-align: middle;
+    display: table-cell;
+}
+.now_is_your_time_item{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+        padding-bottom: 20px;
+}
+.news_latter_sec input[type=text] {
+   padding: 12px;
+    font-size: 15px;
+    border: 1px solid #f1f1f1;
+    float: left;
+    width: 100%;
+    background: #f1f1f1;
+}
+.news_latter_sec button {
+    float: left;
+    width: 78%;
+    padding: 10px;
+    background: #00b5ff;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #f1f1f1;
+    border-left: none;
+}
+.padding_left{
+    padding-left: 0px;
+}
+.padding_right{
+   padding-right: 0px;
+}
+.news_latter_sec form{
+    margin: auto;
+    width: 664px;
+}
+section.articles_guides_sec {
+   background-color: #1e9ee4;
+    color: #fff;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+.articles_guides_list h2 span{
+    display: block;
+}
+.articles_guides_list h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.articles_guides_list .heading p{
+      text-align: center;
+    font-weight: 600;
+}
+.articles_guides_list .heading p span{
+    display: block;
+}
+.news_latter_sec p{
+    text-align: center;
+    font-size: 13px;
+}
+.news_latter_sec input:focus{
+    outline: none;
+}
+.mobile_login_navbar_item{
+    display: none;
+}
+.mobile_login_navbar_item ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.mobile_login_navbar_item ul li a {
+    font-size: 13px;
+    color: #fff;
+    padding: 10px 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.mobile_login_navbar_item .login_navbar_m {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, #000000bd , #00000026);
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 479px) {
+    .datahawker_since_item_list ul{display: block;}
+    .introduction_clien_list{width: 100%;}
+    .pekohe_need_list{width: 100%;}
+    .The_Process_sec .The_Process_list{width: 100%;}
+    .the_results_sec .the_results_list{width: 100%;}
+    .news_latter_sec form{width: 100%;}
+    .datahawker_since_item_list{width: 100%;}
+    .Pekohe_grows_orgamic_sec {padding-left: 20px; padding-right: 20px;}
+    .Pekohe_grows_orgamic_sec h2{    margin-top: 80px;font-size: 19px;}
+    .header_banner_sec{    height: auto; padding-bottom: 44px;}
+    .articles_guides_list h2{font-size: 20px;}
+    .now_is_your_time_list .now_is_your_time_text { display: block;width: 100%;}
+    .now_is_your_time_list {display: block;}
+    .now_is_your_time_value{display: block;}
+    .now_is_your_time_item{width: 100%;}
+    .the_results_table .table thead th{white-space: nowrap;}
+    .the_results_table .table tbody td{white-space: nowrap;}
+    .now_is_your_time_value{text-align: center;}
+    .now_is_your_time_list .now_is_your_time_text{text-align: center;}
+    .the_results_sec .the_result_heading{padding-left: 0px;}
+    .the_result_heading h2{font-size: 25px;}
+    .The_Process_sec .The_Process_list{padding-left: 0px;}
+    .The_Process_sec h2{font-size: 25px;}
+    .pekohe_need_sec .pekohe_need_text{padding-left: 0px;}
+    .pekohe_need_text h2{font-size: 25px;}
+    .introduction_client_sec h2{font-size: 25px;}
+    .introduction_clien_list .introduction_text{padding-left: 0px;}
+    .login_navbar_item {display: none;}
+    .mobile_login_navbar_item{display: block;}
+    .The_Process_text p span{font-size: 18px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px)  {
+    .datahawker_since_item_list ul{display: block;}
+    .introduction_clien_list{width: 100%;}
+    .pekohe_need_list{width: 100%;}
+    .The_Process_sec .The_Process_list{width: 100%;}
+    .the_results_sec .the_results_list{width: 100%;}
+    .news_latter_sec form{width: 100%;}
+    .datahawker_since_item_list{width: 100%;}
+    .Pekohe_grows_orgamic_sec {padding-left: 20px; padding-right: 20px;}
+    .Pekohe_grows_orgamic_sec h2{    margin-top: 80px;font-size: 19px;}
+    .header_banner_sec{    height: auto; padding-bottom: 44px;}
+    .articles_guides_list h2{font-size: 20px;}
+    .now_is_your_time_list .now_is_your_time_text { display: block;width: 100%;}
+    .now_is_your_time_list {display: block;}
+    .now_is_your_time_value{display: block;}
+    .now_is_your_time_item{width: 100%;}
+    .the_results_table .table thead th{white-space: nowrap;}
+    .the_results_table .table tbody td{white-space: nowrap;}
+    .now_is_your_time_value{text-align: center;}
+    .now_is_your_time_list .now_is_your_time_text{text-align: center;}
+    .the_results_sec .the_result_heading{padding-left: 0px;}
+    .the_result_heading h2{font-size: 25px;}
+    .The_Process_sec .The_Process_list{padding-left: 0px;}
+    .The_Process_sec h2{font-size: 25px;}
+    .pekohe_need_sec .pekohe_need_text{padding-left: 0px;}
+    .pekohe_need_text h2{font-size: 25px;}
+    .introduction_client_sec h2{font-size: 25px;}
+    .introduction_clien_list .introduction_text{padding-left: 0px;}
+    .login_navbar_item {display: none;}
+    .mobile_login_navbar_item{display: block;}
+    .The_Process_text p span{font-size: 18px;}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+    .datahawker_since_item_list ul{display: block;}
+    .introduction_clien_list{width: 100%;}
+    .pekohe_need_list{width: 100%;}
+    .The_Process_sec .The_Process_list{width: 100%;}
+    .the_results_sec .the_results_list{width: 100%;}
+    .news_latter_sec form{width: 100%;}
+    .datahawker_since_item_list{width: 100%;}
+    .Pekohe_grows_orgamic_sec {padding-left: 20px; padding-right: 20px;}
+    .Pekohe_grows_orgamic_sec h2{    margin-top: 80px;font-size: 19px;}
+    .header_banner_sec{    height: auto; padding-bottom: 44px;}
+    .articles_guides_list h2{font-size: 20px;}
+    .now_is_your_time_list .now_is_your_time_text { display: block;width: 100%;}
+    .now_is_your_time_list {display: block;}
+    .now_is_your_time_value{display: block;}
+    .now_is_your_time_item{width: 100%;}
+    .the_results_table .table thead th{white-space: nowrap;}
+    .the_results_table .table tbody td{white-space: nowrap;}
+    .now_is_your_time_value{text-align: center;}
+    .now_is_your_time_list .now_is_your_time_text{text-align: center;}
+    .the_results_sec .the_result_heading{padding-left: 0px;}
+    .the_result_heading h2{font-size: 25px;}
+    .The_Process_sec .The_Process_list{padding-left: 0px;}
+    .The_Process_sec h2{font-size: 25px;}
+    .pekohe_need_sec .pekohe_need_text{padding-left: 0px;}
+    .pekohe_need_text h2{font-size: 25px;}
+    .introduction_client_sec h2{font-size: 25px;}
+    .introduction_clien_list .introduction_text{padding-left: 0px;}
+    .login_navbar_item {display: none;}
+    .mobile_login_navbar_item{display: block;}
+    .The_Process_text p span{font-size: 18px;}
+    .datahawker_since_item_list ul li{display: inline-flex;width: 48%;}
+}
+@media only screen and (max-width: 1200px) and (min-width: 990px)  {
+    .menuzord-menu.menuzord-right {float: right;}
+    .menubar_sec{padding-top: 20px;padding-bottom: 20px;}
+    .mobile_login_navbar_item {display: block;}
+    .login_navbar_item{display: none;}
+}
